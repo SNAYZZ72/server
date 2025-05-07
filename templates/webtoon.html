@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SketchDojo Webtoon</title>
+    <style>
+        /* Reset and base styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Comic Sans MS', 'Lato', Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        
+        /* Container for the webtoon */
+        .webtoon-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+            padding-bottom: 40px;
+        }
+        
+        /* Webtoon title styles */
+        .webtoon-title {
+            padding: 20px;
+            text-align: center;
+            background: #333;
+            color: white;
+        }
+        
+        .webtoon-title h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        
+        /* Panel styles */
+        .panel {
+            position: relative;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+        
+        .panel-full {
+            width: 100%;
+        }
+        
+        .panel-half {
+            width: 50%;
+            display: inline-block;
+        }
+        
+        .panel-third {
+            width: 33.333%;
+            display: inline-block;
+        }
+        
+        .panel-image {
+            width: 100%;
+        }
+        
+        .panel-image img {
+            width: 100%;
+            display: block;
+        }
+        
+        /* Speech bubble styles */
+        .speech-bubble {
+            position: absolute;
+            background: white;
+            border-radius: 20px;
+            padding: 10px 15px;
+            max-width: 40%;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            z-index: 2;
+        }
+        
+        .speech-content {
+            font-size: 1rem;
+            line-height: 1.4;
+        }
+        
+        .speech-tail {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: white;
+            transform: rotate(45deg);
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        
+        .speech-tail-left {
+            left: -5px;
+            top: 50%;
+            margin-top: -10px;
+        }
+        
+        .speech-tail-right {
+            right: -5px;
+            top: 50%;
+            margin-top: -10px;
+        }
+        
+        .speech-tail-top {
+            top: -5px;
+            left: 50%;
+            margin-left: -10px;
+        }
+        
+        .speech-tail-bottom {
+            bottom: -5px;
+            left: 50%;
+            margin-left: -10px;
+        }
+        
+        /* Speech bubble styles */
+        .speech-bubble.thought {
+            border-radius: 30px;
+            background: white;
+            border: 2px dashed #ccc;
+        }
+        
+        .speech-bubble.shout {
+            background: #ffffcc;
+            border: 2px solid #ffcc00;
+            font-weight: bold;
+        }
+        
+        .speech-bubble.whisper {
+            background: #f0f0f0;
+            color: #666;
+            font-style: italic;
+        }
+        
+        /* Caption styles */
+        .caption {
+            font-style: italic;
+            text-align: center;
+            padding: 0.5rem;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+        /* Footer styles */
+        .webtoon-footer {
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        /* Sound effect styles */
+        .sound-effect {
+            position: absolute;
+            font-family: 'Impact', sans-serif;
+            color: #ff6600;
+            font-weight: bold;
+            font-size: 24px;
+            text-shadow: 2px 2px 0 white, -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white;
+            transform: rotate(-15deg);
+            z-index: 3;
+        }
+        
+        /* Character name tag */
+        .character-name {
+            position: absolute;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            z-index: 2;
+        }
+        
+        /* Different panel borders */
+        .panel-normal {
+            border: 1px solid #ccc;
+        }
+        
+        .panel-flashback {
+            border: 2px dashed #999;
+        }
+        
+        .panel-dream {
+            border: 3px wavy #9966cc;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 600px) {
+            .panel-half, .panel-third {
+                width: 100%;
+                display: block;
+            }
+            
+            .speech-bubble {
+                max-width: 60%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="webtoon-container">
+        <div class="webtoon-title">
+            <h1>{{ title }}</h1>
+        </div>
+        
+        <!-- Template for panels - will be replaced with actual content -->
+        <!--
+        <div id="panel-1" class="panel panel-full">
+            <div class="panel-image">
+                <img src="/static/images/panel_1.jpg" alt="Panel 1">
+            </div>
+            <div class="speech-bubble" style="top: 10%; left: 10%;" data-character="Character 1">
+                <div class="speech-content">Hello, this is a speech bubble!</div>
+                <div class="speech-tail speech-tail-bottom"></div>
+            </div>
+            <div class="caption">This is a caption for the panel.</div>
+        </div>
+        -->
+        
+        <!-- Panel content will be inserted here -->
+        {{ panel_content }}
+        
+        <div class="webtoon-footer">
+            <p>Created with SketchDojo - {{ timestamp }}</p>
+        </div>
+    </div>
+</body>
+</html>

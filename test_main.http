@@ -1,0 +1,43 @@
+### Test Root Endpoint
+GET http://127.0.0.1:8000/
+Accept: application/json
+
+### Test Health Check Endpoint
+GET http://127.0.0.1:8000/health
+Accept: application/json
+
+### Generate a New Webtoon
+POST http://127.0.0.1:8000/api/generate
+Content-Type: application/json
+Accept: application/json
+
+{
+  "prompt": "A cyberpunk detective story with a female protagonist in a neon city",
+  "style": "manga",
+  "num_panels": 4,
+  "characters": ["Detective Yuki", "Informant Lee"],
+  "additional_context": "The story should have a noir feel with futuristic technology"
+}
+
+### Check Task Status
+# Replace {task_id} with an actual task ID from the generate response
+GET http://127.0.0.1:8000/api/tasks/554e39cd-9714-4af7-b5e6-05ae017e7d4b
+Accept: application/json
+
+### Get Webtoon Result
+# Replace {task_id} with an actual task ID from a completed task
+GET http://127.0.0.1:8000/api/result/b0891782-55cf-4f11-ad23-f74835d0e22d
+Accept: application/json
+
+### Create Custom Panel
+POST http://127.0.0.1:8000/api/panels
+Content-Type: application/json
+Accept: application/json
+
+{
+  "description": "Close-up of Detective Yuki examining a holographic crime scene",
+  "characters": ["Detective Yuki"],
+  "dialogue": ["Something's not right about this evidence..."],
+  "size": "full",
+  "caption": "Downtown Neo-Tokyo, 2:30 AM"
+}
