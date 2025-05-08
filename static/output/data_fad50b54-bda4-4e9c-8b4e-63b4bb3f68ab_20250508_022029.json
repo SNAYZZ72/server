@@ -1,0 +1,134 @@
+[
+  {
+    "panel_id": "1b1cc3a1-b50b-48e0-837d-3beed4afccbf",
+    "description": "The dimly lit office of Luna Voss, cluttered with old case files and digital screens. Outside the window, neon lights flicker in the rain. Luna, with her short silver hair and augmented reality glasses, is seen holding a holographic device to her ear, her expression a mix of concern and determination.",
+    "characters": [
+      "I understand. Stay calm, I'm on my way."
+    ],
+    "dialogue": [
+      {
+        "character": "Character",
+        "text": "I understand. Stay calm, I'm on my way."
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "I understand. Stay calm, I'm on my way.",
+        "character": "Character",
+        "position": "top-right",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "http://localhost:8000/static/images/panel_1b1cc3a1-b50b-48e0-837d-3beed4afccbf_20250508_021940.png",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "A subtle glow emanates from the holographic device, illuminating Luna's face. Rain droplets on the window reflect neon colors."
+      }
+    ]
+  },
+  {
+    "panel_id": "67cf49b9-50b6-4c94-9832-bdad90d8be6b",
+    "description": "A chaotic scene of Luna sprinting through the rain-soaked streets of Neon City. Masked assailants are chasing her, their silhouettes ominous against the backdrop of towering skyscrapers and digital billboards. The rain is pouring heavily, creating a sense of urgency.",
+    "characters": [
+      "You won't catch me that easily!"
+    ],
+    "dialogue": [
+      {
+        "character": "Character",
+        "text": "You won't catch me that easily!"
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "You won't catch me that easily!",
+        "character": "Luna",
+        "position": "top-right",
+        "style": "shout",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "http://localhost:8000/static/images/panel_67cf49b9-50b6-4c94-9832-bdad90d8be6b_20250508_021957.png",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "Motion lines to emphasize Luna's speed, raindrops splattering as she dodges between alleyways."
+      }
+    ]
+  },
+  {
+    "panel_id": "56af656a-3730-42d3-8c9a-c3def544df97",
+    "description": "Inside a smoky bar filled with shadowy figures and holographic advertisements. Luna stands at a table, confronting Jax Thorne, who leans back with a smirk, his cybernetic eye glowing faintly. The atmosphere is tense, and patrons are watching them curiously.",
+    "characters": [
+      "I know you have information, Jax. Stop playing games."
+    ],
+    "dialogue": [
+      {
+        "character": "Character",
+        "text": "I know you have information, Jax. Stop playing games."
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "I know you have information, Jax. Stop playing games.",
+        "character": "Luna",
+        "position": "top-left",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "http://localhost:8000/static/images/panel_56af656a-3730-42d3-8c9a-c3def544df97_20250508_022014.png",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "Holographic ads flickering above them, creating a surreal ambiance. A haze of smoke surrounds the characters."
+      }
+    ]
+  },
+  {
+    "panel_id": "50265692-bd27-4d84-b048-854265418524",
+    "description": "A gritty police precinct filled with augmented officers and surveillance screens. Detective Rhea Carter stands with arms crossed, looking sternly at Luna, who appears determined but wary. The background shows a wall of monitors displaying various feeds of city activity.",
+    "characters": [
+      "You think you can solve this alone? You're playing with fire."
+    ],
+    "dialogue": [
+      {
+        "character": "Character",
+        "text": "You think you can solve this alone? You're playing with fire."
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "You think you can solve this alone? You're playing with fire.",
+        "character": "Detective Rhea Carter",
+        "position": "top-left",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "http://localhost:8000/static/images/panel_50265692-bd27-4d84-b048-854265418524_20250508_022029.png",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "Glowing screens casting light on the characters, creating a stark contrast between the dark precinct and the illuminated monitors."
+      }
+    ]
+  }
+]

@@ -1,0 +1,134 @@
+[
+  {
+    "panel_id": "5af669ea-77fe-4409-babd-3433265ff70e",
+    "description": "Raven stands on the edge of a rooftop, her silhouette framed against the sprawling Neon City skyline. The city is alive with towering skyscrapers bathed in vibrant neon lights, while rain pours down, creating a reflective shimmer on the surfaces. The atmosphere is thick with a mix of urban decay and technological wonder.",
+    "characters": [
+      "Raven (thought bubble)"
+    ],
+    "dialogue": [
+      {
+        "character": "Raven (thought bubble)",
+        "text": "'In a city like this, truth hides in the shadows.'"
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "'In a city like this, truth hides in the shadows.'",
+        "character": "Raven",
+        "position": "top-center",
+        "style": "thought",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "http://localhost:8000/static/images/panel_5af669ea-77fe-4409-babd-3433265ff70e_20250508_024543.png",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "Raindrops visibly splashing against the rooftop, neon reflections in the puddles below, a faint glow from her cybernetic eye."
+      }
+    ]
+  },
+  {
+    "panel_id": "60ef5a13-1458-44fd-920c-edac0d787cdd",
+    "description": "Inside a dark alleyway, dimly lit by flickering neon signs. Raven faces Jax Mercer, who leans casually against a graffiti-covered wall, his expression a mix of charm and caution. Surveillance drones hover above, their lights scanning the area, creating a tension-filled atmosphere.",
+    "characters": [
+      "Jax"
+    ],
+    "dialogue": [
+      {
+        "character": "Jax",
+        "text": "'The Syndicate is deeper than you think, Raven. They control everything, even your own department.'"
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "'The Syndicate is deeper than you think, Raven. They control everything, even your own department.'",
+        "character": "Jax",
+        "position": "top-right",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "http://localhost:8000/static/images/panel_60ef5a13-1458-44fd-920c-edac0d787cdd_20250508_024556.png",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "Holographic text bubbles displaying data about The Syndicate appearing beside Jax, with drone lights creating a strobe effect."
+      }
+    ]
+  },
+  {
+    "panel_id": "ca974524-c042-425f-b427-4e74a8b59246",
+    "description": "Raven is seated in front of a large, high-tech computer interface, a series of holographic data streams swirling around her. Her cybernetic eye glows as she hacks into a corporate mainframe. The screen displays cascading lines of neon code, representing sensitive information being extracted.",
+    "characters": [
+      "Raven"
+    ],
+    "dialogue": [
+      {
+        "character": "Raven",
+        "text": "'Just a little more... I can expose them.'"
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "'Just a little more... I can expose them.'",
+        "character": "Raven",
+        "position": "top-right",
+        "style": "normal",
+        "tail_direction": "left",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "http://localhost:8000/static/images/panel_ca974524-c042-425f-b427-4e74a8b59246_20250508_024610.png",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "The data streams visually represented with glowing neon colors, with a digital fingerprint effect surrounding Raven's eye."
+      }
+    ]
+  },
+  {
+    "panel_id": "879fef88-fa1d-4465-84f4-d8488d025bf2",
+    "description": "A dynamic action panel showing Raven sprinting through a busy street filled with futuristic vehicles. Behind her, Syndicate henchmen chase her, their faces masked. The scene is chaotic, with pedestrians looking on in shock as the chase unfolds, and neon lights streaking past.",
+    "characters": [
+      "Raven (yelling)"
+    ],
+    "dialogue": [
+      {
+        "character": "Raven (yelling)",
+        "text": "'I won't let you take me down!'"
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "'I won't let you take me down!'",
+        "character": "Raven",
+        "position": "top-center",
+        "style": "shout",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "http://localhost:8000/static/images/panel_879fef88-fa1d-4465-84f4-d8488d025bf2_20250508_024624.png",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "Motion lines indicating speed, neon light trails behind vehicles, and expressions of shock from bystanders."
+      }
+    ]
+  }
+]

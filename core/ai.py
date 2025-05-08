@@ -167,6 +167,24 @@ class AI:
                                 parsed_content["mood"] = "Intense and dramatic"
                             else:
                                 parsed_content["mood"] = "Balanced mix of light and serious moments"
+                        
+                        # Add missing required fields
+                        if "main_characters" not in parsed_content:
+                            parsed_content["main_characters"] = [{"name": "Protagonist", "description": "Main character of the story"}]
+                            
+                        if "plot_summary" not in parsed_content:
+                            if "setting" in parsed_content and isinstance(parsed_content["setting"], dict):
+                                setting_desc = ""
+                                if "description" in parsed_content["setting"]:
+                                    setting_desc = parsed_content["setting"]["description"]
+                                elif "timePeriod" in parsed_content["setting"]:
+                                    setting_desc = f"Set in {parsed_content['setting']['timePeriod']}"
+                                parsed_content["plot_summary"] = f"A story set in {setting_desc}"
+                            else:
+                                parsed_content["plot_summary"] = "An engaging story with twists and character development"
+                                
+                        if "key_scenes" not in parsed_content:
+                            parsed_content["key_scenes"] = [{"description": "Introduction to the main character and setting"}]
                     
                     # Preprocess panel descriptions to fix common validation issues
                     elif response_model == PanelDescriptionsResponse and "panels" in parsed_content:
@@ -229,6 +247,37 @@ class AI:
                                             dialogue_entry["character"] = "Character"
                                         if "text" not in dialogue_entry:
                                             dialogue_entry["text"] = "..."
+                            
+                            # Ensure special_effects is a list if present
+                            if "special_effects" in panel:
+                                if not isinstance(panel["special_effects"], list):
+                                    # Convert string or other non-list types to a list with one item
+                                    panel["special_effects"] = [str(panel["special_effects"])]
+                            
+                            # Convert panel_size to a valid value
+                            if "panel_size" in panel:
+                                # Map common size names to valid sizes
+                                size_mapping = {
+                                    "full-width": "full",
+                                    "full_width": "full",
+                                    "fullwidth": "full",
+                                    "half-width": "half",
+                                    "half_width": "half",
+                                    "halfwidth": "half",
+                                    "third-width": "third",
+                                    "third_width": "third",
+                                    "thirdwidth": "third",
+                                    "quarter-width": "quarter",
+                                    "quarter_width": "quarter",
+                                    "quarterwidth": "quarter"
+                                }
+                                
+                                panel_size = panel["panel_size"].lower()
+                                if panel_size in size_mapping:
+                                    panel["panel_size"] = size_mapping[panel_size]
+                                elif panel_size not in ["full", "half", "third", "quarter"]:
+                                    # Default to full if unknown size format
+                                    panel["panel_size"] = "full"
                     
                     # Use model_validate instead of parse_obj (which is deprecated in newer Pydantic versions)
                     return response_model.model_validate(parsed_content)
@@ -424,8 +473,15 @@ class AI:
         1. Position (top-left, center-right, etc.)
         2. Style (normal, thought, shouted, etc.)
         3. Tail direction (pointing to which character)
+        4. Character name
+        5. Text content
         
-        Format your response as a JSON object with a "speechBubbles" array.
+        Format your response as a JSON object with a "speechBubbles" array containing objects with fields:
+        - text: The text content of the speech bubble
+        - character: The character speaking
+        - position: Position on panel (top-left, center-right, etc.)
+        - style: Style (normal, thought, shouted)
+        - tail_direction: Direction the tail points
         """
         
         user_message = f"""
@@ -446,7 +502,24 @@ class AI:
             
             if isinstance(result, SpeechBubblesResponse):
                 # Use model_dump instead of dict() (which is deprecated in newer Pydantic versions)
-                return [bubble.model_dump() for bubble in result.speechBubbles]
+                speech_bubbles = [bubble.model_dump() for bubble in result.speechBubbles]
+                
+                # Validate speech bubbles
+                for bubble in speech_bubbles:
+                    if not isinstance(bubble, dict):
+                        raise ValueError("Speech bubble must be a dictionary")
+                    if "text" not in bubble or not isinstance(bubble["text"], str):
+                        raise ValueError("Speech bubble text must be a string")
+                    if "character" not in bubble or not isinstance(bubble["character"], str):
+                        raise ValueError("Speech bubble character must be a string")
+                    if "position" not in bubble or not isinstance(bubble["position"], str):
+                        raise ValueError("Speech bubble position must be a string")
+                    if "style" not in bubble or not isinstance(bubble["style"], str):
+                        raise ValueError("Speech bubble style must be a string")
+                    if "tail_direction" not in bubble or not isinstance(bubble["tail_direction"], str):
+                        raise ValueError("Speech bubble tail direction must be a string")
+                
+                return speech_bubbles
             return result
             
         except Exception as e:

@@ -1,0 +1,134 @@
+[
+  {
+    "panel_id": "9aa12db2-e6c7-4132-ac2a-4020a0e32e14",
+    "description": "Kira Sato stands atop a towering skyscraper, rain pouring down around her. The city of Neo-Tokyo sprawls below, illuminated by a myriad of neon lights reflecting off her cybernetic eye. Her expression is a mix of determination and weariness, as she gazes into the distance, contemplating her past.",
+    "characters": [
+      "Character"
+    ],
+    "dialogue": [
+      {
+        "character": "Character",
+        "text": ""
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "",
+        "character": "Character",
+        "position": "top-left",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "static/images/placeholder.jpg",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "Raindrops falling, neon lights flickering in the background, soft glow highlighting Kira's face."
+      }
+    ]
+  },
+  {
+    "panel_id": "14c7b94e-50f0-4a14-b2ad-0c17e765c48e",
+    "description": "Inside a dimly lit interrogation room, Kira leans forward over a table, her piercing gaze locked onto a shady informant. Shadows create dramatic shapes on the walls, enhancing the tension in the air. The informant appears nervous, fidgeting with his hands.",
+    "characters": [
+      "Kira"
+    ],
+    "dialogue": [
+      {
+        "character": "Kira",
+        "text": "'I know you have information. Don't waste my time.'"
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "'I know you have information. Don't waste my time.'",
+        "character": "Kira",
+        "position": "top-left",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "half",
+    "image_path": "static/images/placeholder.jpg",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "Dark shadows, a single overhead light casting a spotlight effect."
+      }
+    ]
+  },
+  {
+    "panel_id": "241fbd9e-98be-4062-a47d-3f77c5db1f60",
+    "description": "A dynamic scene of a high-speed chase through the bustling streets of Neo-Tokyo. Kira and Ryo are in a sleek hovercar, their expressions focused as they dodge other vehicles and evade surveillance drones. The background is a blur of neon signs and speeding lights.",
+    "characters": [
+      "Ryo"
+    ],
+    "dialogue": [
+      {
+        "character": "Ryo",
+        "text": "'Hold on! This is going to be a bumpy ride!'"
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "'Hold on! This is going to be a bumpy ride!'",
+        "character": "Ryo",
+        "position": "top-left",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "static/images/placeholder.jpg",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "Motion lines to suggest speed, bright neon colors contrasting against the dark city."
+      }
+    ]
+  },
+  {
+    "panel_id": "76d67107-01bc-4209-998c-cbaf3039475a",
+    "description": "In a dark, rain-soaked alley, Kira stands facing The Phantom. Their silhouettes are illuminated by flickering neon signs, creating an eerie atmosphere. Kira's expression is fierce, while The Phantom's face remains obscured, shrouded in mystery.",
+    "characters": [
+      "Kira"
+    ],
+    "dialogue": [
+      {
+        "character": "Kira",
+        "text": "'It's time to end this game!'"
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "'It's time to end this game!'",
+        "character": "Kira",
+        "position": "top-left",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "static/images/placeholder.jpg",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "Flashes of lightning in the background, rain droplets creating a dramatic effect."
+      }
+    ]
+  }
+]

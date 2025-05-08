@@ -1,0 +1,142 @@
+[
+  {
+    "panel_id": "3d0418bd-0097-4ea1-9963-0048c3cb1077",
+    "description": "A wide shot of Neon City at night, showcasing its sprawling metropolis filled with towering skyscrapers adorned with vibrant holographic advertisements. The streets glow with neon lights, casting a colorful yet eerie ambiance. In the foreground, Rhea Kade stands confidently on a rooftop, her silhouette framed against the skyline. Her cybernetic eye glows faintly, scanning the streets below.",
+    "characters": [
+      "Character"
+    ],
+    "dialogue": [
+      {
+        "character": "Character",
+        "text": ""
+      }
+    ],
+    "speech_bubbles": [],
+    "size": "full",
+    "image_path": "static/images/panel_3d0418bd-0097-4ea1-9963-0048c3cb1077_20250508_015524.png",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "A subtle glow effect around Rhea's cybernetic eye, emphasizing its technology."
+      }
+    ]
+  },
+  {
+    "panel_id": "6fc14cad-ed21-4719-ac8b-990d85b30e17",
+    "description": "A tense, close-up scene in a dark alley. Rhea is facing a group of intimidating thugs, her posture defensive yet ready for action. The thugs are depicted with menacing expressions, brandishing weapons. Rhea is equipped with a high-tech gadget in her hand, projecting a holographic shield around her.",
+    "characters": [
+      "Rhea"
+    ],
+    "dialogue": [
+      {
+        "character": "Rhea",
+        "text": "\"You picked the wrong alley to mess around in!\""
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "\"You picked the wrong alley to mess around in!\"",
+        "character": "Rhea",
+        "position": "top-center",
+        "style": "shout",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "static/images/panel_6fc14cad-ed21-4719-ac8b-990d85b30e17_20250508_015539.png",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "Dynamic motion lines to emphasize action and intensity as Rhea prepares to strike."
+      }
+    ]
+  },
+  {
+    "panel_id": "76b1a913-955c-4df3-a5fe-d4946f077fe0",
+    "description": "Inside a dimly lit room, Milo and Rhea are huddled over a holographic map that hovers above a table. The map displays various locations linked to the disappearances, glowing in neon blue. Milo, with a concerned expression, points at a specific area while Rhea listens intently, her face illuminated by the hologram.",
+    "characters": [
+      "Milo"
+    ],
+    "dialogue": [
+      {
+        "character": "Milo",
+        "text": "\"If we follow this lead, we might just find out where they're taking them.\" Rhea: \"Let's not waste any time then!\""
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "\"If we follow this lead, we might just find out where they're taking them.\"",
+        "character": "Milo",
+        "position": "top-left",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      },
+      {
+        "text": "\"Let's not waste any time then!\"",
+        "character": "Rhea",
+        "position": "bottom-right",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "static/images/panel_76b1a913-955c-4df3-a5fe-d4946f077fe0_20250508_015555.png",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "Faint circuit-like patterns in the background to enhance the tech vibe of the scene."
+      }
+    ]
+  },
+  {
+    "panel_id": "228527b1-fc14-4177-82c2-adb424f40f1a",
+    "description": "A sleek, high-tech office filled with screens displaying data and images. Dante Voss stands confidently behind a desk, his charismatic smile hiding his ruthlessness. Rhea stands across from him, arms crossed, a look of determination on her face. Shadows loom around them, creating a sense of tension.",
+    "characters": [
+      "Dante"
+    ],
+    "dialogue": [
+      {
+        "character": "Dante",
+        "text": "\"You\u2019re playing a dangerous game, Rhea. Are you sure you\u2019re ready for the truth?\" Rhea: \"I\u2019ll take my chances.\""
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "\"You\u2019re playing a dangerous game, Rhea. Are you sure you\u2019re ready for the truth?\"",
+        "character": "Dante",
+        "position": "top-left",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      },
+      {
+        "text": "\"I\u2019ll take my chances.\"",
+        "character": "Rhea",
+        "position": "top-right",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "static/images/panel_228527b1-fc14-4177-82c2-adb424f40f1a_20250508_015608.png",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "A spotlight effect on Dante to highlight his presence and a darker ambiance around Rhea to signify her resolve."
+      }
+    ]
+  }
+]

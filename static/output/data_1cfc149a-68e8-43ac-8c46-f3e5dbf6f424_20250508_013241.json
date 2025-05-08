@@ -1,0 +1,134 @@
+[
+  {
+    "panel_id": "d4eb9b53-b77f-4dbe-bf54-a99918893a6c",
+    "description": "A sweeping view of Neon Haven, the sprawling metropolis under a rain-soaked night sky. Towering skyscrapers are adorned with vibrant neon lights, casting a colorful glow on the wet streets below. In the foreground, we see Kai Lin standing on a rooftop, her silhouette outlined by the neon glow. Her cybernetic eye glows faintly, scanning the cityscape.",
+    "characters": [
+      "I can almost see the truth hiding in the shadows..."
+    ],
+    "dialogue": [
+      {
+        "character": "Character",
+        "text": "I can almost see the truth hiding in the shadows..."
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "I can almost see the truth hiding in the shadows...",
+        "character": "Character",
+        "position": "top-left",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "static/images/placeholder.jpg",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "Raindrops splatter on the panel, and a faint digital overlay appears around Kai's eye indicating enhanced vision."
+      }
+    ]
+  },
+  {
+    "panel_id": "1855458a-6592-44cb-a89f-f8985aa2acd8",
+    "description": "Inside a high-security facility, illuminated by the cold blue light of security panels. Kai and Ryder are stealthily moving through a dimly lit corridor, equipped with futuristic gadgets. Kai is holding a small device that emits a holographic map, while Ryder is hacking into a terminal, his eyes focused and intense.",
+    "characters": [
+      "Just a little longer, I can bypass the system! Stay sharp, Kai."
+    ],
+    "dialogue": [
+      {
+        "character": "Character",
+        "text": "Just a little longer, I can bypass the system! Stay sharp, Kai."
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "Just a little longer, I can bypass the system! Stay sharp, Kai.",
+        "character": "Character",
+        "position": "top-left",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "static/images/placeholder.jpg",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "A glowing interface from the terminal displays security levels and a countdown timer, adding tension to the scene."
+      }
+    ]
+  },
+  {
+    "panel_id": "4de98a52-d98e-4645-9401-8d7a37abeae2",
+    "description": "A lavish office filled with holographic displays and sleek furniture. Lila Chen sits behind a polished desk, her expression calm yet menacing. Kai stands across from her, eyes narrowed, tension palpable in the air. Holographic images of the city\u2019s dark underbelly float around them.",
+    "characters": [
+      "You think you can play with lives and get away with it, Lila?"
+    ],
+    "dialogue": [
+      {
+        "character": "Character",
+        "text": "You think you can play with lives and get away with it, Lila?"
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "You think you can play with lives and get away with it, Lila?",
+        "character": "Character",
+        "position": "top-left",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "static/images/placeholder.jpg",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "Holograms flicker ominously, with text snippets of news headlines about disappearances and corporate scandals swirling around them."
+      }
+    ]
+  },
+  {
+    "panel_id": "5b3ecba4-6d6e-4849-b6b7-68ea285b2470",
+    "description": "A chaotic high-speed chase through the crowded streets of Neon Haven. Flying cars zoom past as Kai navigates her vehicle with determination, closely pursued by a black sedan filled with henchmen. Neon signs and advertisements blur in the background, creating a vibrant and frenetic atmosphere.",
+    "characters": [
+      "No turning back now! I need to catch them before it\u2019s too late!"
+    ],
+    "dialogue": [
+      {
+        "character": "Character",
+        "text": "No turning back now! I need to catch them before it\u2019s too late!"
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "No turning back now! I need to catch them before it\u2019s too late!",
+        "character": "Character",
+        "position": "top-left",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "static/images/placeholder.jpg",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "Motion lines emphasize the speed of the chase, and overlays of speedometer readings highlight the danger."
+      }
+    ]
+  }
+]

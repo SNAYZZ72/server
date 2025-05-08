@@ -1,0 +1,143 @@
+[
+  {
+    "panel_id": "268c3be0-f4ed-47f4-9854-8df22c7357f4",
+    "description": "Rina Kade stands atop a towering skyscraper, her trench coat billowing in the wind. The skyline of Neon City glimmers with vibrant neon lights and holographic advertisements. Rina's cybernetic eye glows faintly as she scans the horizon with a determined expression on her face. Below, the city pulses with life, hinting at the chaos beneath its surface.",
+    "characters": [
+      "Character"
+    ],
+    "dialogue": [
+      {
+        "character": "Character",
+        "text": ""
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "I can feel the chaos brewing below...",
+        "character": "Rina Kade",
+        "position": "top-right",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "http://localhost:8000/static/images/panel_268c3be0-f4ed-47f4-9854-8df22c7357f4_20250508_022726.png",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "A soft glow from Rina's cybernetic eye; neon lights reflecting on her face."
+      }
+    ]
+  },
+  {
+    "panel_id": "c4689655-3dd2-4818-a5de-93e3ad70d423",
+    "description": "A dark, opulent lair filled with holographic screens displaying illicit business dealings. Silas 'The Broker' Jett sits casually in a luxurious chair, a sly smile on his face as he faces Rina. Rina stands defiantly opposite him, her fists clenched, tension palpable in the air. The shadows in the room enhance the sinister atmosphere.",
+    "characters": [
+      "Rina"
+    ],
+    "dialogue": [
+      {
+        "character": "Rina",
+        "text": "'You think you can keep hiding behind your wealth and power forever, Jett?'"
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "'You think you can keep hiding behind your wealth and power forever, Jett?'",
+        "character": "Rina",
+        "position": "top-left",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "http://localhost:8000/static/images/panel_c4689655-3dd2-4818-a5de-93e3ad70d423_20250508_022742.png",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "Flickering holograms casting eerie shadows."
+      }
+    ]
+  },
+  {
+    "panel_id": "57e2a533-1225-46b5-86fa-04aedfc82fe5",
+    "description": "Inside a high-security facility, Rina and Max work in perfect sync. Rina focuses on bypassing a laser security system while Max types rapidly on a portable device, sweat glistening on his brow. The tension is evident as alarm lights flash ominously around them.",
+    "characters": [
+      "Max"
+    ],
+    "dialogue": [
+      {
+        "character": "Max",
+        "text": "'Just a few more seconds! We can\u2019t get caught now!'"
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "'Just a few more seconds! We can\u2019t get caught now!'",
+        "character": "Max",
+        "position": "top-right",
+        "style": "shout",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "http://localhost:8000/static/images/panel_57e2a533-1225-46b5-86fa-04aedfc82fe5_20250508_022757.png",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "Red flashing alarms and digital countdown timer on Max's device."
+      }
+    ]
+  },
+  {
+    "panel_id": "433ecc60-a4d7-43f0-b458-b7d621793da4",
+    "description": "A flashback scene with muted colors showing a young Rina in a broken-down home, surrounded by chaos. Her eyes are wide with fear as she witnesses a traumatic event, the room dark and shadowy. The contrast with the vibrant neon world highlights the emotional weight of her memories.",
+    "characters": [
+      "Character"
+    ],
+    "dialogue": [
+      {
+        "character": "Character",
+        "text": ""
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "I can't believe this is happening...",
+        "character": "Rina",
+        "position": "top-left",
+        "style": "thought",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      },
+      {
+        "text": "Please, make it stop!",
+        "character": "Rina",
+        "position": "bottom-right",
+        "style": "shout",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "http://localhost:8000/static/images/panel_433ecc60-a4d7-43f0-b458-b7d621793da4_20250508_022812.png",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "Soft focus effect to indicate a memory; fading edges."
+      }
+    ]
+  }
+]

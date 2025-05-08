@@ -1,0 +1,118 @@
+[
+  {
+    "panel_id": "e87c00df-7f88-48ec-be70-2e856608a67b",
+    "description": "A wide shot of Neon Haven at night, showcasing a sprawling metropolis filled with towering skyscrapers. Neon lights and holographic billboards illuminate the streets, casting vibrant colors on the dark alleys below. The skyline is dotted with flying vehicles zipping through the air. In the foreground, Luna Kade stands on a rooftop, her silhouette framed against the glowing cityscape, with a contemplative expression as she gazes down into the chaos.",
+    "characters": [
+      "This city thrives on lies... and I'm determined to uncover the truth."
+    ],
+    "dialogue": [
+      {
+        "character": "Character",
+        "text": "This city thrives on lies... and I'm determined to uncover the truth."
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "This city thrives on lies... and I'm determined to uncover the truth.",
+        "character": "Luna Kade",
+        "position": "top-left",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "static/images/placeholder.jpg",
+    "caption": null,
+    "position": null,
+    "effects": []
+  },
+  {
+    "panel_id": "57a010ea-7170-4977-b290-713aa123fb70",
+    "description": "A close-up of a dimly lit alley, where Luna confronts Kieran Vox. Neon signs flicker above them, casting eerie shadows. Luna\u2019s expression is fierce and determined, while Kieran leans casually against a wall, a smirk on his face, hiding his unease. Their body language shows tension; Luna is pointing an accusatory finger at him.",
+    "characters": [
+      "Cut the games, Kieran. I know you're hiding something."
+    ],
+    "dialogue": [
+      {
+        "character": "Character",
+        "text": "Cut the games, Kieran. I know you're hiding something."
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "Cut the games, Kieran. I know you're hiding something.",
+        "character": "Luna",
+        "position": "top-left",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "static/images/placeholder.jpg",
+    "caption": null,
+    "position": null,
+    "effects": []
+  },
+  {
+    "panel_id": "484b3496-d433-4295-ad23-a1c7270067ef",
+    "description": "An overhead view of a crime scene. Luna kneels beside a body, her cybernetic eye glowing with data analysis as holographic projections of evidence swirl around her. Elysia\u2019s interface appears as a transparent overlay beside her, displaying information and insights. The scene is chaotic, with police tape and flashing lights in the background.",
+    "characters": [
+      "Elysia, scan the area for any anomalies. We need to find connections."
+    ],
+    "dialogue": [
+      {
+        "character": "Character",
+        "text": "Elysia, scan the area for any anomalies. We need to find connections."
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "Elysia, scan the area for any anomalies. We need to find connections.",
+        "character": "Luna",
+        "position": "top-left",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "static/images/placeholder.jpg",
+    "caption": null,
+    "position": null,
+    "effects": []
+  },
+  {
+    "panel_id": "e653eb82-e18e-4064-b81f-873e9f5c4e9c",
+    "description": "A dynamic action shot of Luna sprinting through a crowded street, dodging pedestrians and flying vehicles. Her expression is fierce, reflecting urgency and determination. The background blurs to emphasize her speed, while neon lights create streaks of color around her.",
+    "characters": [
+      "I won't let them get away!"
+    ],
+    "dialogue": [
+      {
+        "character": "Character",
+        "text": "I won't let them get away!"
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "I won't let them get away!",
+        "character": "Character",
+        "position": "top-right",
+        "style": "shout",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "static/images/placeholder.jpg",
+    "caption": null,
+    "position": null,
+    "effects": []
+  }
+]

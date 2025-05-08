@@ -21,12 +21,12 @@ Accept: application/json
 
 ### Check Task Status
 # Replace {task_id} with an actual task ID from the generate response
-GET http://127.0.0.1:8000/api/tasks/554e39cd-9714-4af7-b5e6-05ae017e7d4b
+GET http://127.0.0.1:8000/api/tasks/0fe16cbb-528f-4263-90ca-7e0d93bb24e5
 Accept: application/json
 
 ### Get Webtoon Result
 # Replace {task_id} with an actual task ID from a completed task
-GET http://127.0.0.1:8000/api/result/b0891782-55cf-4f11-ad23-f74835d0e22d
+GET http://127.0.0.1:8000/api/result/0c82fff5-ac09-4266-8a91-98eece7972c2
 Accept: application/json
 
 ### Create Custom Panel

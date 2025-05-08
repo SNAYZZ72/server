@@ -1,0 +1,134 @@
+[
+  {
+    "panel_id": "d45aec7a-4857-488e-b8da-6e3d6ea16c1d",
+    "description": "Raven stands on a rooftop overlooking the sprawling cityscape of Neon Haven. The sky is dark, with rain pouring down, reflecting neon lights from the towering skyscrapers below. She has her cybernetic arm flexed slightly as she holds a small device displaying a cryptic message.",
+    "characters": [
+      "What the hell... Another disappearance?"
+    ],
+    "dialogue": [
+      {
+        "character": "Character",
+        "text": "What the hell... Another disappearance?"
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "What the hell... Another disappearance?",
+        "character": "Character",
+        "position": "top-right",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "static/images/placeholder.jpg",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "Glowing neon reflections in the rain, a soft glow from the device in her hand."
+      }
+    ]
+  },
+  {
+    "panel_id": "7c7bfef1-68c4-41e4-945f-96cf829342c7",
+    "description": "A dimly lit back alley filled with graffiti and flickering holograms. Raven and Dex stand face-to-face, tension palpable in the air. Raven has her arms crossed, while Dex leans casually against a wall, a sly smile on his face.",
+    "characters": [
+      "You think you can just waltz in and play hero, Raven? You're in over your head."
+    ],
+    "dialogue": [
+      {
+        "character": "Character",
+        "text": "You think you can just waltz in and play hero, Raven? You're in over your head."
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "You think you can just waltz in and play hero, Raven? You're in over your head.",
+        "character": "Dex",
+        "position": "top-left",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "half",
+    "image_path": "static/images/placeholder.jpg",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "Flickering lights from nearby holograms casting shadows, with a rain effect adding to the moody atmosphere."
+      }
+    ]
+  },
+  {
+    "panel_id": "d702eccc-bae4-4247-a7d2-6bf5c9320297",
+    "description": "Inside a high-tech lab with stark white walls and futuristic equipment. Raven stands in shock, her eyes wide as she stares at a monitor displaying horrific images of experiments. The room is sterile, with an eerie glow from the machinery around her.",
+    "characters": [
+      "This... this can't be happening."
+    ],
+    "dialogue": [
+      {
+        "character": "Character",
+        "text": "This... this can't be happening."
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "This... this can't be happening.",
+        "character": "Raven",
+        "position": "top-left",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "static/images/placeholder.jpg",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "Flickering screens and a digital overlay of data, creating an unsettling atmosphere."
+      }
+    ]
+  },
+  {
+    "panel_id": "0ecf75ca-55b7-456c-a8b3-0ac417742dc8",
+    "description": "In a luxurious office high above the city, Lila Voss stands confidently behind a sleek desk, her expression cold and calculating. Raven is positioned opposite her, visibly frustrated. The city skyline is visible through the glass walls, emphasizing their contrasting worlds.",
+    "characters": [
+      "You think you can control everything, don\u2019t you? But people aren\u2019t experiments."
+    ],
+    "dialogue": [
+      {
+        "character": "Character",
+        "text": "You think you can control everything, don\u2019t you? But people aren\u2019t experiments."
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "You think you can control everything, don\u2019t you? But people aren\u2019t experiments.",
+        "character": "Raven",
+        "position": "top-left",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "static/images/placeholder.jpg",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "A stark contrast between the dark, gritty alley outside and the bright, polished office, enhancing the tension between the characters."
+      }
+    ]
+  }
+]

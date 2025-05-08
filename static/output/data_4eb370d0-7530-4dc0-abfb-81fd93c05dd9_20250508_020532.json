@@ -1,0 +1,118 @@
+[
+  {
+    "panel_id": "8f42455d-d18c-471f-9e37-ce5c3283ba1c",
+    "description": "A panoramic view of Neon City at night, showcasing towering skyscrapers adorned with vibrant neon lights and holographic advertisements. The city is a blend of beauty and decay, with dark alleyways hinting at the danger that lurks within. In the foreground, Raven Steele stands on a rooftop, her silhouette framed against the dazzling skyline, her cybernetic eye glowing subtly as she scans the city.",
+    "characters": [
+      "This city... it hides its darkness well."
+    ],
+    "dialogue": [
+      {
+        "character": "Character",
+        "text": "This city... it hides its darkness well."
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "This city... it hides its darkness well.",
+        "character": "Raven Steele",
+        "position": "bottom-center",
+        "style": "normal",
+        "tail_direction": "top",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "/static/images/panel_8f42455d-d18c-471f-9e37-ce5c3283ba1c_20250508_020443.png",
+    "caption": null,
+    "position": null,
+    "effects": []
+  },
+  {
+    "panel_id": "bb3a0ca0-8e12-4c9c-a2b8-7101c0c44c36",
+    "description": "Inside a dimly lit bar, the atmosphere is thick with smoke and the sound of muffled conversations. Raven and her partner Dex sit at a table cluttered with empty glasses and holographic screens. They lean forward, intent on a shady informant across from them, who appears nervous and jittery. The background features flickering advertisements that occasionally illuminate their faces.",
+    "characters": [
+      "Raven"
+    ],
+    "dialogue": [
+      {
+        "character": "Raven",
+        "text": "'We know about the murders tied to Voss Industries. Who's behind it?'"
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "'We know about the murders tied to Voss Industries. Who's behind it?'",
+        "character": "Raven",
+        "position": "top-left",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "/static/images/panel_bb3a0ca0-8e12-4c9c-a2b8-7101c0c44c36_20250508_020459.png",
+    "caption": null,
+    "position": null,
+    "effects": []
+  },
+  {
+    "panel_id": "80cd3580-dffa-4f81-a4f4-ab34a453e1f8",
+    "description": "A high-octane chase scene unfolds through the bustling streets of Neon City. Raven, on a sleek hoverboard, pursues a shadowy figure darting through a crowd. Neon billboards flash above, showcasing vibrant advertisements that blur past. The energy of the city is palpable, with streaks of light trailing behind Raven as she expertly maneuvers through obstacles.",
+    "characters": [
+      "Raven"
+    ],
+    "dialogue": [
+      {
+        "character": "Raven",
+        "text": "'You can't escape me!'"
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "'You can't escape me!'",
+        "character": "Raven",
+        "position": "top-right",
+        "style": "shout",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "/static/images/panel_80cd3580-dffa-4f81-a4f4-ab34a453e1f8_20250508_020517.png",
+    "caption": null,
+    "position": null,
+    "effects": []
+  },
+  {
+    "panel_id": "28eb95d8-e7c1-48fb-a866-c2c32b108f3a",
+    "description": "In a sleek and modern office with large windows overlooking the city, Raven stands face-to-face with Elara Voss. The tension is palpable, with both women glaring at each other, their expressions fierce. Elara, impeccably dressed, exudes confidence while Raven's posture is determined but conflicted.",
+    "characters": [
+      "Elara"
+    ],
+    "dialogue": [
+      {
+        "character": "Elara",
+        "text": "'You think you can expose me? You have no idea what you're up against.'"
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "'You think you can expose me? You have no idea what you're up against.'",
+        "character": "Elara",
+        "position": "top-left",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "/static/images/panel_28eb95d8-e7c1-48fb-a866-c2c32b108f3a_20250508_020532.png",
+    "caption": null,
+    "position": null,
+    "effects": []
+  }
+]

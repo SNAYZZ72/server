@@ -1,0 +1,134 @@
+[
+  {
+    "panel_id": "d24e3b80-2d9a-4ee3-bd4f-5c487a1fb74a",
+    "description": "Rhea stands on a rain-soaked rooftop, her silhouette framed against a sprawling metropolis of towering skyscrapers. Holographic billboards flash vibrant advertisements, and the glow of flying cars illuminates the dark sky. Rhea is dressed in a sleek, futuristic trench coat, her cybernetic enhancements subtly glowing on her arms.",
+    "characters": [
+      "I can't let the shadows of my past dictate my future."
+    ],
+    "dialogue": [
+      {
+        "character": "Character",
+        "text": "I can't let the shadows of my past dictate my future."
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "I can't let the shadows of my past dictate my future.",
+        "character": "Rhea",
+        "position": "bottom-center",
+        "style": "normal",
+        "tail_direction": "top",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "http://localhost:8000/static/images/panel_d24e3b80-2d9a-4ee3-bd4f-5c487a1fb74a_20250508_023628.png",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "Raindrops splattering against the panel, with a slight glow from the neon lights reflecting off the wet surfaces."
+      }
+    ]
+  },
+  {
+    "panel_id": "6598393f-308b-43de-a380-225de54d9783",
+    "description": "In a dark alley, Rhea faces a group of thugs who have drawn weapons. Her expression is calm and focused as she prepares to engage. The alley is dimly lit by flickering neon lights, creating a stark contrast with the shadows.",
+    "characters": [
+      "You picked the wrong night to mess with me."
+    ],
+    "dialogue": [
+      {
+        "character": "Character",
+        "text": "You picked the wrong night to mess with me."
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "You picked the wrong night to mess with me.",
+        "character": "Rhea",
+        "position": "top-left",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "half",
+    "image_path": "http://localhost:8000/static/images/panel_6598393f-308b-43de-a380-225de54d9783_20250508_023646.png",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "Motion lines to indicate Rhea\u2019s swift movements as she dodges an attack, along with a dynamic sound effect like 'SWISH!'"
+      }
+    ]
+  },
+  {
+    "panel_id": "b5f2000a-b5af-48ee-b476-1efb312b4e5e",
+    "description": "Inside a high-security lab, Rhea and Max are crouched behind a row of computers. Holographic screens project data and security feeds. Max is typing rapidly on a portable device, while Rhea watches the door with a determined look.",
+    "characters": [
+      "If you trip the alarm, I\u2019m blaming you."
+    ],
+    "dialogue": [
+      {
+        "character": "Character",
+        "text": "If you trip the alarm, I\u2019m blaming you."
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "If you trip the alarm, I\u2019m blaming you.",
+        "character": "Rhea",
+        "position": "top-left",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "http://localhost:8000/static/images/panel_b5f2000a-b5af-48ee-b476-1efb312b4e5e_20250508_023703.png",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "Glowing holographic data streams surrounding them, with a red warning light pulsing in the background."
+      }
+    ]
+  },
+  {
+    "panel_id": "c93b8a9f-2dfc-424a-9d47-00eb702613e9",
+    "description": "In a luxurious penthouse, the CEO of the corporation stands in front of a massive window overlooking the city. Rhea confronts him, her posture assertive, as she reveals the truth behind the disappearances. The room is opulent, with dark colors and glowing screens.",
+    "characters": [
+      "You thought you could play god without consequences. You\u2019re wrong."
+    ],
+    "dialogue": [
+      {
+        "character": "Character",
+        "text": "You thought you could play god without consequences. You\u2019re wrong."
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "You thought you could play god without consequences. You\u2019re wrong.",
+        "character": "Rhea",
+        "position": "top-left",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "http://localhost:8000/static/images/panel_c93b8a9f-2dfc-424a-9d47-00eb702613e9_20250508_023717.png",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "A dramatic lighting effect illuminating Rhea\u2019s face, casting deep shadows to emphasize the tension of the moment."
+      }
+    ]
+  }
+]

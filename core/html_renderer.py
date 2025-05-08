@@ -85,7 +85,13 @@ class HTMLRenderer:
         # Add panel image
         image_path = getattr(panel, 'image_path', None)
         if image_path:
-            image_url = f"/{image_path}" if not image_path.startswith('/') else image_path
+            # Don't add leading slash if it's a full URL
+            if image_path.startswith('http://') or image_path.startswith('https://'):
+                image_url = image_path
+            else:
+                # For relative paths, add a leading slash if it doesn't have one
+                image_url = f"/{image_path}" if not image_path.startswith('/') else image_path
+                
             html += f'  <div class="panel-image"><img src="{image_url}" alt="Panel {panel.panel_id}"></div>\n'
         
         # Add speech bubbles
@@ -262,30 +268,37 @@ class HTMLRenderer:
         .webtoon-container {{
             max-width: 800px;
             margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background: black; /* Change to black like typical webtoons */
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
             position: relative;
-            padding-bottom: 40px;
+            padding: 0; /* Remove padding */
+            font-size: 0; /* Remove any space between inline elements */
+            line-height: 0; /* Remove any space between lines */
         }}
         
         /* Webtoon title styles */
         .webtoon-title {{
-            padding: 20px;
+            padding: 15px 0;
             text-align: center;
-            background: #333;
+            background: #000;
             color: white;
+            font-size: 16px; /* Reset font size for this element */
+            line-height: 1.4; /* Reset line height for this element */
         }}
         
         .webtoon-title h1 {{
             margin: 0;
             font-size: 28px;
+            font-family: 'Arial', sans-serif;
         }}
         
         /* Panel styles */
         .panel {{
             position: relative;
-            margin-bottom: 1rem;
+            margin: 0;
+            padding: 0;
             overflow: hidden;
+            display: block;
         }}
         
         .panel-full {{
@@ -320,6 +333,9 @@ class HTMLRenderer:
             max-width: 40%;
             box-shadow: 0 0 5px rgba(0,0,0,0.2);
             z-index: 2;
+            font-size: 16px; /* Reset font-size */
+            line-height: 1.4; /* Reset line-height */
+            font-family: 'Comic Sans MS', 'Lato', Arial, sans-serif; /* Reset font */
         }}
         
         .speech-content {{
@@ -391,6 +407,9 @@ class HTMLRenderer:
             bottom: 0;
             width: 100%;
             box-sizing: border-box;
+            font-size: 14px; /* Reset font size */
+            line-height: 1.4; /* Reset line height */
+            font-family: 'Comic Sans MS', 'Lato', Arial, sans-serif; /* Reset font */
         }}
         
         /* Footer styles */
@@ -398,7 +417,10 @@ class HTMLRenderer:
             padding: 20px;
             text-align: center;
             font-size: 14px;
-            color: #666;
+            line-height: 1.4;
+            color: #999;
+            background: #000;
+            font-family: 'Arial', sans-serif;
         }}
         
         /* Sound effect styles */

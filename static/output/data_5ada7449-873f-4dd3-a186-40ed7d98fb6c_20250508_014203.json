@@ -1,0 +1,134 @@
+[
+  {
+    "panel_id": "5756bd9a-1d5d-4847-a948-28b1a733db06",
+    "description": "Luna stands on a rain-soaked rooftop, her silhouette illuminated by the vibrant neon lights of Neon City. The skyline is filled with towering skyscrapers and holographic advertisements flickering in the misty air. She gazes down at the bustling streets, her cybernetic eye glowing softly, reflecting her determination.",
+    "characters": [
+      "Character"
+    ],
+    "dialogue": [
+      {
+        "character": "Character",
+        "text": ""
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "I won't let them take my city!",
+        "character": "Luna",
+        "position": "top-left",
+        "style": "normal",
+        "tail_direction": "right",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "static/images/placeholder.jpg",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "Raindrops splatter against the rooftop, and neon reflections shimmer in puddles below."
+      }
+    ]
+  },
+  {
+    "panel_id": "f4f2198c-cc65-472c-9361-c620b6687a79",
+    "description": "Inside a dimly lit bar, Luna sits across from Rex at a small table. The atmosphere is thick with tension, shadows cast by the flickering neon signs outside. Rex leans back with a charming smirk, but there\u2019s a hint of distrust in his eyes. Luna's expression is serious, arms crossed, as she studies him.",
+    "characters": [
+      "Luna"
+    ],
+    "dialogue": [
+      {
+        "character": "Luna",
+        "text": "'I don\u2019t trust you, Rex. What\u2019s your angle?'"
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "'I don\u2019t trust you, Rex. What\u2019s your angle?'",
+        "character": "Luna",
+        "position": "top-left",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "static/images/placeholder.jpg",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "The neon lights create a stark contrast between light and shadow, emphasizing their emotional distance."
+      }
+    ]
+  },
+  {
+    "panel_id": "9612a1fd-daef-4d7c-9be4-9bd421a54716",
+    "description": "A high-octane chase scene unfolds as Luna and Echo dash through the crowded streets of Neon City. Holographic advertisements flash around them, and drones hover overhead, scanning the area. Luna's face is focused, while Echo, depicted as a small floating orb, has a playful expression, cracking a joke mid-chase.",
+    "characters": [
+      "Echo"
+    ],
+    "dialogue": [
+      {
+        "character": "Echo",
+        "text": "'You know, I always wanted to be in a movie! Just not the 'chase for my life' genre!'"
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "'You know, I always wanted to be in a movie! Just not the 'chase for my life' genre!'",
+        "character": "Echo",
+        "position": "top-right",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "static/images/placeholder.jpg",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "Motion lines and dynamic angles create a sense of speed and urgency."
+      }
+    ]
+  },
+  {
+    "panel_id": "d7cdfe07-d359-4a41-9ead-7b3ceb8b738f",
+    "description": "In a dark, modern control room filled with screens displaying surveillance feeds of Neon City, Luna confronts the Architect, who is shrouded in shadows. The Architect\u2019s face is hidden, but their presence is imposing. Luna stands defiantly, fists clenched, ready for a showdown.",
+    "characters": [
+      "Luna"
+    ],
+    "dialogue": [
+      {
+        "character": "Luna",
+        "text": "'You think you can control everything? You're wrong.'"
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "'You think you can control everything? You're wrong.'",
+        "character": "Luna",
+        "position": "top-left",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "static/images/placeholder.jpg",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "The screens flicker with static, enhancing the atmosphere of tension and foreboding."
+      }
+    ]
+  }
+]

@@ -107,12 +107,104 @@ class StoryService:
                             
                             # Create SpeechBubble objects
                             for bubble_data in speech_bubbles_data:
+                                # Normalize position format
+                                position = bubble_data.get("position", "top-left")
+                                
+                                # Map position to valid format (horizontal-vertical)
+                                if position and isinstance(position, str):
+                                    # Extract horizontal and vertical components
+                                    parts = position.lower().replace('_', '-').split('-')
+                                    
+                                    # Map common position terms to valid values
+                                    horiz_map = {
+                                        "left": "left", 
+                                        "center": "center", 
+                                        "middle": "center", 
+                                        "right": "right"
+                                    }
+                                    vert_map = {
+                                        "top": "top", 
+                                        "upper": "top", 
+                                        "middle": "center", 
+                                        "center": "center", 
+                                        "bottom": "bottom", 
+                                        "lower": "bottom"
+                                    }
+                                    
+                                    # Default positions
+                                    horiz = "left"
+                                    vert = "top"
+                                    
+                                    # Parse position parts
+                                    for part in parts:
+                                        if part in horiz_map:
+                                            horiz = horiz_map[part]
+                                        elif part in vert_map:
+                                            vert = vert_map[part]
+                                    
+                                    # Format as "vertical-horizontal"
+                                    position = f"{vert}-{horiz}"
+                                
+                                # Normalize tail direction
+                                tail_direction = bubble_data.get("tail_direction", "bottom")
+                                if tail_direction and isinstance(tail_direction, str):
+                                    # Map common tail direction terms to valid values
+                                    direction_map = {
+                                        "up": "top",
+                                        "upward": "top",
+                                        "upwards": "top",
+                                        "down": "bottom",
+                                        "downward": "bottom",
+                                        "downwards": "bottom",
+                                        "left": "left",
+                                        "leftward": "left",
+                                        "right": "right",
+                                        "rightward": "right",
+                                        "none": "none"
+                                    }
+                                    
+                                    # Check for exact matches
+                                    if tail_direction.lower() in direction_map:
+                                        tail_direction = direction_map[tail_direction.lower()]
+                                    # Check for phrases like "pointing to Character"
+                                    elif "pointing" in tail_direction.lower():
+                                        tail_direction = "bottom"  # Default when pointing to a character
+                                    else:
+                                        # Default to bottom if not recognized
+                                        tail_direction = "bottom"
+                                
+                                # Normalize style
+                                style = bubble_data.get("style", "normal")
+                                if style and isinstance(style, str):
+                                    # Map common style terms to valid values
+                                    style_map = {
+                                        "normal": "normal",
+                                        "regular": "normal",
+                                        "thought": "thought",
+                                        "thinking": "thought",
+                                        "shout": "shout", 
+                                        "shouted": "shout",
+                                        "shouting": "shout",
+                                        "yell": "shout",
+                                        "yelling": "shout",
+                                        "whisper": "whisper",
+                                        "whispering": "whisper",
+                                        "quiet": "whisper"
+                                    }
+                                    
+                                    if style.lower() in style_map:
+                                        style = style_map[style.lower()]
+                                    else:
+                                        # Default to normal if not recognized
+                                        style = "normal"
+                                
+                                # Create the speech bubble with normalized values
                                 speech_bubbles.append(SpeechBubble(
                                     text=bubble_data.get("text", ""),
                                     character=bubble_data.get("character", "Unknown"),
-                                    position=bubble_data.get("position", "top-left"),
-                                    style=bubble_data.get("style", "normal"),
-                                    tail_direction=bubble_data.get("tail_direction", "bottom")
+                                    position=position,
+                                    style=style,
+                                    tail_direction=tail_direction
                                 ))
                         except Exception as bubble_error:
                             logger.error(f"Error generating speech bubbles: {str(bubble_error)}")
@@ -126,6 +218,38 @@ class StoryService:
                                     tail_direction="bottom"
                                 ))
                 
+                # Convert panel size to valid format
+                panel_size = panel_desc.get("panel_size", "full")
+                # Map common size names to valid sizes
+                size_mapping = {
+                    "full-width": "full",
+                    "full_width": "full",
+                    "fullwidth": "full",
+                    "half-width": "half",
+                    "half_width": "half",
+                    "halfwidth": "half",
+                    "third-width": "third",
+                    "third_width": "third",
+                    "thirdwidth": "third",
+                    "quarter-width": "quarter",
+                    "quarter_width": "quarter",
+                    "quarterwidth": "quarter"
+                }
+                if panel_size in size_mapping:
+                    panel_size = size_mapping[panel_size]
+                elif panel_size not in ["full", "half", "third", "quarter"]:
+                    panel_size = "full"  # Default to full if invalid size
+                
+                # Convert special effects to proper format
+                special_effects = panel_desc.get("special_effects", [])
+                formatted_effects = []
+                for effect in special_effects:
+                    if isinstance(effect, str):
+                        # Convert string to dictionary format
+                        formatted_effects.append({"description": effect})
+                    elif isinstance(effect, dict):
+                        formatted_effects.append(effect)
+                
                 # Create the panel object
                 panel = Panel(
                     panel_id=panel_id,
@@ -133,9 +257,9 @@ class StoryService:
                     characters=characters,
                     dialogue=dialogue,
                     speech_bubbles=speech_bubbles,
-                    size=panel_desc.get("panel_size", "full"),
+                    size=panel_size,
                     caption=panel_desc.get("caption", None),
-                    effects=panel_desc.get("special_effects", [])
+                    effects=formatted_effects
                 )
                 
                 panels.append(panel)

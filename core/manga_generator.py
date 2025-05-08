@@ -15,6 +15,7 @@ from services.story_service import StoryService
 from services.image_service import ImageService
 from services.layout_service import LayoutService
 from utils.helpers import ensure_directories_exist, generate_timestamp, save_data_to_json
+from config import get_image_url
 
 # Configure logging
 logger = logging.getLogger(__name__)
@@ -92,27 +93,33 @@ class MangaGenerator:
             style: The desired art style (manga, webtoon, etc.)
             
         Returns:
-            The path to the generated image
+            The URL to the generated image (accessible from anywhere)
         """
         logger.info(f"Generating image for panel {panel.panel_id}")
         
         try:
-            image_path = await self.image_service.generate_image(
+            # Image service now returns both file_path and url
+            file_path, image_url = await self.image_service.generate_image(
                 panel.description,
                 panel.characters,
                 style,
                 f"panel_{panel.panel_id}"
             )
-            panel.image_path = image_path
-            logger.info(f"Image generated at {image_path}")
-            return image_path
+            
+            # Store the accessible URL in the panel's image_path
+            # This ensures it's accessible from anywhere
+            panel.image_path = image_url
+            
+            logger.info(f"Image generated at {file_path} (URL: {image_url})")
+            return image_url
             
         except Exception as e:
             logger.error(f"Error generating image for panel {panel.panel_id}: {str(e)}")
             # Use a placeholder image if generation fails
             placeholder_path = "static/images/placeholder.jpg"
-            panel.image_path = placeholder_path
-            return placeholder_path
+            placeholder_url = get_image_url(placeholder_path)
+            panel.image_path = placeholder_url
+            return placeholder_url
         
     async def generate_html_output(self, panels: List[Panel], task_id: str) -> str:
         """

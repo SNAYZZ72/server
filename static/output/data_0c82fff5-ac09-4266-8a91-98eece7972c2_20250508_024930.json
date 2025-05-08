@@ -1,0 +1,134 @@
+[
+  {
+    "panel_id": "f602e245-4291-4b26-abed-fc41c3e0d7dc",
+    "description": "Luna stands atop a towering skyscraper, overlooking the sprawling city of Neon City at night. The skyline is filled with glimmering neon lights, holographic advertisements flickering in the rain. The droplets reflect the vibrant colors, creating a surreal atmosphere. Luna\u2019s silhouette is powerful yet melancholic, with her cybernetic eye glowing subtly. She holds a communicator to her ear, her expression tense and focused.",
+    "characters": [
+      "I\u2019m on my way. What do you mean another one?"
+    ],
+    "dialogue": [
+      {
+        "character": "Character",
+        "text": "I\u2019m on my way. What do you mean another one?"
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "I\u2019m on my way. What do you mean another one?",
+        "character": "Character",
+        "position": "top-left",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "http://localhost:8000/static/images/panel_f602e245-4291-4b26-abed-fc41c3e0d7dc_20250508_024843.png",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "The rain falls in dynamic, exaggerated streaks, with neon colors splashing off the droplets. A subtle glow surrounds Luna\u2019s cybernetic eye."
+      }
+    ]
+  },
+  {
+    "panel_id": "99bdc09f-0882-4cfe-b894-ecb1952bb7ae",
+    "description": "Inside a lavish high-tech gala, Cy and Luna stand amidst a crowd of elegantly dressed elites. The room is filled with holographic displays and shimmering lights. Cy adjusts his tie, flashing a charming smile, while Luna scans the crowd with a critical eye. The opulence contrasts sharply with the tension in their expressions as they search for clues.",
+    "characters": [
+      "Keep your eyes peeled. Vale\u2019s somewhere in this crowd."
+    ],
+    "dialogue": [
+      {
+        "character": "Character",
+        "text": "Keep your eyes peeled. Vale\u2019s somewhere in this crowd."
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "Keep your eyes peeled. Vale\u2019s somewhere in this crowd.",
+        "character": "Cy",
+        "position": "top-left",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "http://localhost:8000/static/images/panel_99bdc09f-0882-4cfe-b894-ecb1952bb7ae_20250508_024904.png",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "Holographic text floats above guests' heads, showing their names and social statuses. The atmosphere feels electric with anticipation."
+      }
+    ]
+  },
+  {
+    "panel_id": "81074691-01a1-44f6-be9d-6b4af6d355c2",
+    "description": "A dark alley illuminated by flickering neon signs. Rook, a shapeshifter cloaked in shadows, stands against a graffiti-covered wall, their features shifting slightly. Luna and Cy confront Rook, both looking on edge. The tension is palpable as Rook smirks, revealing a hint of mischief and intrigue.",
+    "characters": [
+      "You\u2019re looking for answers? I might have what you need, but it comes at a price."
+    ],
+    "dialogue": [
+      {
+        "character": "Character",
+        "text": "You\u2019re looking for answers? I might have what you need, but it comes at a price."
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "You\u2019re looking for answers? I might have what you need, but it comes at a price.",
+        "character": "Rook",
+        "position": "top-right",
+        "style": "normal",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "half",
+    "image_path": "http://localhost:8000/static/images/panel_81074691-01a1-44f6-be9d-6b4af6d355c2_20250508_024919.png",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "The neon signs cast eerie colors on Rook, creating a surreal, dreamlike quality. There\u2019s a light mist in the air that adds to the atmosphere."
+      }
+    ]
+  },
+  {
+    "panel_id": "623f8ed2-bb93-4da1-87ee-9de9b07248dd",
+    "description": "A chaotic high-speed chase through the crowded streets of Neon City. Luna, piloting a sleek hovercar, speeds past towering skyscrapers with neon graffiti. The background is a blur of vibrant colors and flying vehicles. Luna's face shows determination, while the suspect's vehicle is just ahead, weaving through traffic.",
+    "characters": [
+      "You won't get away that easily!"
+    ],
+    "dialogue": [
+      {
+        "character": "Character",
+        "text": "You won't get away that easily!"
+      }
+    ],
+    "speech_bubbles": [
+      {
+        "text": "You won't get away that easily!",
+        "character": "Luna",
+        "position": "top-center",
+        "style": "shout",
+        "tail_direction": "bottom",
+        "size": "medium",
+        "font_style": null
+      }
+    ],
+    "size": "full",
+    "image_path": "http://localhost:8000/static/images/placeholder.jpg",
+    "caption": null,
+    "position": null,
+    "effects": [
+      {
+        "description": "Motion lines emphasize the speed of the chase. The neon lights of the city streak across the panel, enhancing the sense of urgency."
+      }
+    ]
+  }
+]
