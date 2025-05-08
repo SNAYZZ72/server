@@ -13,7 +13,7 @@ Accept: application/json
 
 {
   "prompt": "A cyberpunk detective story with a female protagonist in a neon city",
-  "style": "manga",
+  "style": "webtoon",
   "num_panels": 4,
   "characters": ["Detective Yuki", "Informant Lee"],
   "additional_context": "The story should have a noir feel with futuristic technology"
@@ -21,12 +21,12 @@ Accept: application/json
 
 ### Check Task Status
 # Replace {task_id} with an actual task ID from the generate response
-GET http://127.0.0.1:8000/api/tasks/0fe16cbb-528f-4263-90ca-7e0d93bb24e5
+GET http://127.0.0.1:8000/api/tasks/d72485dd-a698-4600-95dd-0417b5d2b31a
 Accept: application/json
 
 ### Get Webtoon Result
 # Replace {task_id} with an actual task ID from a completed task
-GET http://127.0.0.1:8000/api/result/0c82fff5-ac09-4266-8a91-98eece7972c2
+GET http://127.0.0.1:8000/api/result/d72485dd-a698-4600-95dd-0417b5d2b31a
 Accept: application/json
 
 ### Create Custom Panel

@@ -1,22 +1,20 @@
 """
 API routes for manga/webtoon generation
 """
+import logging
+import os
+import uuid
+
 from fastapi import APIRouter, BackgroundTasks, HTTPException, Body, Depends
 from fastapi.responses import HTMLResponse, FileResponse
-import uuid
-import os
-import asyncio
-import logging
-from typing import Dict, Any, List
 
-from core.manga_generator import MangaGenerator
-from core.ai import AI
 from api.models import (
-    WebtoonRequest, 
-    TaskResponse, 
-    TaskStatus,
-    PanelUpdate
+    WebtoonRequest,
+    TaskResponse,
+    TaskStatus
 )
+from core.ai import AI
+from core.manga_generator import MangaGenerator
 from models.panel import PanelRequest
 
 # Configure logging

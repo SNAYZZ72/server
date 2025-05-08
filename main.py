@@ -2,15 +2,14 @@
 Main entry point for the FastAPI server for manga/webtoon generation
 """
 import os
+from typing import Dict, Any, Optional
+
 # Import config to load environment variables
-import config
-from fastapi import FastAPI, HTTPException, BackgroundTasks
+from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import HTMLResponse, JSONResponse
+from fastapi.responses import JSONResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
-import uuid
-from typing import Dict, Any, Optional
 
 from api.routes import router as api_router
 
