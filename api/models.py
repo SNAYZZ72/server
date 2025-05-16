@@ -43,3 +43,12 @@ class ImageGenerationRequest(BaseModel):
 class ImageGenerationResponse(BaseModel):
     """Response model for image generation"""
     image_path: str = Field(..., description="Path to the generated image")
+
+class ProjectRequest(BaseModel):
+    """Request model for creating a new project"""
+    prompt: str = Field(..., description="Initial prompt for the project")
+
+class ProjectResponse(BaseModel):
+    """Response model for project creation"""
+    projectId: str = Field(..., description="Unique ID of the created project")
+    projectName: str = Field(..., description="Name of the created project")

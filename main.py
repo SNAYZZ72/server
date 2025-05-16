@@ -12,6 +12,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 from api.routes import router as api_router
+from api.chat_routes import router as chat_router
 
 app = FastAPI(title="SketchDojo API", description="API for generating manga/webtoons from prompts", debug=True)
 
@@ -31,6 +32,9 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # Include API routes
 app.include_router(api_router, prefix="/api")
+
+# Include Chat routes
+app.include_router(chat_router, prefix="/api/chat", tags=["chat"])
 
 # Task storage (in memory for simplicity, use a database in production)
 tasks = {}

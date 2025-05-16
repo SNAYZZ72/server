@@ -4,6 +4,7 @@ API routes for manga/webtoon generation
 import logging
 import os
 import uuid
+from datetime import datetime
 
 from fastapi import APIRouter, BackgroundTasks, HTTPException, Body, Depends
 from fastapi.responses import HTMLResponse, FileResponse
@@ -11,7 +12,9 @@ from fastapi.responses import HTMLResponse, FileResponse
 from api.models import (
     WebtoonRequest,
     TaskResponse,
-    TaskStatus
+    TaskStatus,
+    ProjectRequest,
+    ProjectResponse
 )
 from core.ai import AI
 from core.manga_generator import MangaGenerator
@@ -24,6 +27,7 @@ router = APIRouter()
 
 # In-memory task storage (use a database in production)
 tasks = {}
+projects = {}
 
 async def get_ai_client() -> AI:
     """Dependency to get AI client instance"""
@@ -164,6 +168,32 @@ async def get_webtoon_result(task_id: str):
     
     logger.info(f"Returning HTML result for task {task_id}")
     return HTMLResponse(content=html_content)
+
+@router.post("/projects", response_model=ProjectResponse)
+async def create_project(request: ProjectRequest):
+    """Create a new project with an initial prompt"""
+    try:
+        project_id = str(uuid.uuid4())
+        logger.info(f"Creating new project: {project_id}")
+        
+        # Store initial project data
+        projects[project_id] = {
+            "id": project_id,
+            "name": f"Webtoon Project {project_id[:8]}",  # Generate a random name
+            "prompt": request.prompt,
+            "created_at": datetime.now().isoformat(),
+            "status": "created"
+        }
+        
+        logger.info(f"Project {project_id} created successfully")
+        return ProjectResponse(
+            projectId=project_id,
+            projectName=projects[project_id]["name"]
+        )
+        
+    except Exception as e:
+        logger.error(f"Error creating project: {str(e)}")
+        raise HTTPException(status_code=500, detail=str(e))
 
 @router.get("/result/{task_id}/download", response_class=FileResponse)
 async def download_webtoon_result(task_id: str):
