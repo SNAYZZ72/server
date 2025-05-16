@@ -37,7 +37,7 @@ async def get_ai_client() -> AI:
     )
 
 async def generate_webtoon_task(
-    task_id: str, 
+    task_id: str,
     request: WebtoonRequest,
     ai: AI
 ):
@@ -59,18 +59,48 @@ async def generate_webtoon_task(
         tasks[task_id].progress = 0.1
         logger.info(f"Generating story for task {task_id}")
         
-        story = await generator.generate_story(
-            request.prompt, 
-            request.additional_context
-        )
+        # Add retry logic with a maximum number of attempts
+        max_attempts = 3
+        attempt = 0
+        story = None
+        
+        while attempt < max_attempts:
+            try:
+                attempt += 1
+                story = await generator.generate_story(
+                    request.prompt, 
+                    request.additional_context
+                )
+                # If successful, break out of the retry loop
+                break
+            except Exception as e:
+                logger.warning(f"Attempt {attempt}/{max_attempts} failed: {str(e)}")
+                if attempt >= max_attempts:
+                    raise ValueError(f"Failed to generate story after {max_attempts} attempts: {str(e)}")
+                # Wait briefly before retry
+                await asyncio.sleep(1)
+        
         tasks[task_id].progress = 0.3
         
-        # Generate panels and update progress
+        # Generate panels and update progress with similar retry logic
         logger.info(f"Generating panels for task {task_id}")
-        panels = await generator.generate_panels(
-            story, 
-            request.num_panels
-        )
+        attempt = 0
+        panels = None
+        
+        while attempt < max_attempts:
+            try:
+                attempt += 1
+                panels = await generator.generate_panels(
+                    story, 
+                    request.num_panels
+                )
+                break
+            except Exception as e:
+                logger.warning(f"Panel generation attempt {attempt}/{max_attempts} failed: {str(e)}")
+                if attempt >= max_attempts:
+                    raise ValueError(f"Failed to generate panels after {max_attempts} attempts: {str(e)}")
+                await asyncio.sleep(1)
+                
         tasks[task_id].progress = 0.5
         
         # Generate images for each panel
@@ -101,12 +131,56 @@ async def generate_webtoon_task(
         
     except Exception as e:
         logger.error(f"Error in task {task_id}: {str(e)}", exc_info=True)
-        # Update task status to failed
+        
+        # Generate a basic fallback HTML when validation fails
+        html_content = f"""
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Error Generating Webtoon</title>
+            <style>
+                body {{ font-family: sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; }}
+                .error-container {{ background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: 4px; padding: 20px; margin: 20px 0; }}
+                h1 {{ color: #721c24; }}
+                .message {{ background: #f8f9fa; padding: 15px; border-radius: 4px; margin: 20px 0; }}
+                .suggestion {{ background: #d1ecf1; padding: 15px; border-radius: 4px; }}
+            </style>
+        </head>
+        <body>
+            <h1>Oops! There was a problem generating your webtoon</h1>
+            <div class="error-container">
+                <p>We encountered an error while creating your webtoon based on the prompt:</p>
+                <div class="message"><strong>"{request.prompt}"</strong></div>
+            </div>
+            <div class="suggestion">
+                <h3>Try one of these instead:</h3>
+                <ul>
+                    <li>"Create a simple manga about a student discovering magic powers"</li>
+                    <li>"Generate a short comic about a detective solving a mystery"</li>
+                    <li>"Make a fantasy webtoon with a hero and a dragon"</li>
+                </ul>
+            </div>
+            <p>Technical details: {str(e)[:150]}...</p>
+        </body>
+        </html>
+        """
+        
+        # Save the fallback HTML
+        fallback_html_path = f"static/webtoons/{task_id}.html"
+        os.makedirs(os.path.dirname(fallback_html_path), exist_ok=True)
+        with open(fallback_html_path, "w") as f:
+            f.write(html_content)
+            
+        # Update task status to failed but provide the fallback HTML
         tasks[task_id] = TaskStatus(
             task_id=task_id,
             status="failed",
             progress=0.0,
-            result={"error": str(e)}
+            result={
+                "error": str(e),
+                "html_path": fallback_html_path,
+                "fallback": True
+            }
         )
 
 @router.post("/generate", response_model=TaskResponse)
